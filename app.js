@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-  `mongodb+srv://${process.env.DB_USER}:${process.env.USER_PASSWORD}@cluster0.an1hr.mongodb.net/BlogApp?retryWrites=true&w=majority`,                                             //"mongodb://localhost:27017/blogDB"
+  `mongodb+srv://${process.env.DB_USER}:${process.env.USER_PASSWORD}@cluster0.an1hr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,                                             //"mongodb://localhost:27017/blogDB"
   { useNewUrlParser: true },
   { useUnifiedTopology: true },
   { useUnifiedTopology: true }
